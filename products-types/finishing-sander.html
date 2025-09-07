@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineerring Tools</title>
+    <link rel="stylesheet" href="../css/engineering.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function () {
+        const activeLink = document.querySelector('.products-types ul li a.active');
+        if (activeLink) {
+        const productsTypes = document.querySelector('.products-types');
+        const offsetTop = activeLink.offsetTop - productsTypes.offsetTop;
+        productsTypes.scrollTop = offsetTop;
+        }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../pages/contact.html" >اتصل بنا</a></li>
+                    <li><a href="../pages/accessories.html">ملحقات ادوات كهربائية</a></li>
+                    <li><a href="../pages/hand-tools.html">ادوات يدوية</a></li>
+                    <li><a href="../pages/electrical-tools.html" class="active">ادوات كهربائية</a></li>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a href="../index.html" class="active">الرئيسية</a></li>
+                    <li><a href="../pages/electrical-tools.html">ادوات كهربائية</a></li>
+                    <li><a href="../pages/hand-tools.html">ادوات يدوية</a></li>
+                    <li><a href="../pages/accessories.html">ملحقات ادوات كهربائية</a></li>
+                    <li><a href="../pages/contact.html" >اتصل بنا</a></li>
+                </ul>
+
+        </div>
+    </header>
+    <div class="products">
+        <div class="container">
+            <details class="products-types-mobile">
+            <summary>ادوات كهربائية</summary>
+            <ul>
+                <li><a href="../products-types/rotary-hammer.html">هيلتي</a></li>
+                <li><a href="../products-types/imapact-drill.html">شنيور تخريم</a></li>
+                <li><a href="../products-types/angle-grinder.html">صاروخ تقطيع وتجليغ وتلميع</a></li>
+                <li><a href="../products-types/heat-gun.html">هيتر تسخين</a></li>
+                <li><a href="../products-types/finishing-sander.html" class="active">صنفرة هزاز</a></li>
+                <li><a href="../products-types/blower.html">بلاور</a></li>
+                <li><a href="../products-types/wall-chaser.html">قاطع حوائط</a></li>
+                <li><a href="../products-types/electric-planer.html">فارة كهربائية</a></li>
+                <li><a href="../products-types/jig-saw.html">منشار اركت</a></li>
+                <li><a href="../products-types/circular-saw.html">منشار صينية</a></li>
+                <li><a href="../products-types/vacuum-cleaner.html">مكنسة كهربائية</a></li>
+                <li><a href="../products-types/mixer.html">خلاط</a></li>
+                <li><a href="../products-types/air-compressor.html">كمبروسر هواء</a></li>
+                <li><a href="../products-types/bench-grinder.html">ماتور جلغ</a></li>
+                <li><a href="../products-types/electric-router.html">راوتر كهربائي</a></li>
+                <li><a href="../products-types/high-pressure-washer.html">ماكينة غسيل</a></li>
+                <li><a href="../products-types/water-pump.html">ماتور مياه</a></li>
+                <li><a href="../products-types/submersible-pump.html">ترومبة غطس</a></li>
+                <li><a href="../products-types/welding-machine.html">ماكينة لحام</a></li>
+                <li><a href="../products-types/glue-gun.html">مسدس شمع</a></li>
+                <li><a href="../products-types/extention-cord.html">مشترك كهرباء</a></li>
+            </ul>
+        </details>
+            <div class="products-types">
+                <h2>ادوات كهربائية</h2>
+                <ul>
+                    <li><a href="../products-types/rotary-hammer.html" >هيلتي</a></li>
+                    <li><a href="../products-types/imapact-drill.html">شنيور تخريم</a><li>
+                    <li><a href="../products-types/angle-grinder.html" >صاروخ تقطيع وتجليغ وتلميع</a></li>
+                    <li><a href="../products-types/heat-gun.html" >هيتر تسخين</a></li>
+                    <li><a href="../products-types/finishing-sander.html" class="active">صنفرة هزاز</a></li>
+                    <li><a href="../products-types/blower.html">بلاور</a></li>
+                    <li><a href="../products-types/wall-chaser.html">قاطع حوائط</a></li>
+                    <li><a href="../products-types/electric-planer.html">فارة كهربائية</a></li>
+                    <li><a href="../products-types/jig-saw.html">منشار اركت</a></li>
+                    <li><a href="../products-types/circular-saw.html">منشار صينية</a></li>
+                    <li><a href="../products-types/vacuum-cleaner.html">مكنسة كهربائية</a></li>
+                    <li><a href="../products-types/mixer.html">خلاط</a></li>
+                    <li><a href="../products-types/air-compressor.html">كمبروسر هواء</a></li>
+                    <li><a href="../products-types/bench-grinder.html">ماتور جلغ</a></li>
+                    <li><a href="../products-types/electric-router.html">راوتر كهربائي</a></li>
+                    <li><a href="../products-types/high-pressure-washer.html">ماكينة غسيل</a></li>
+                    <li><a href="../products-types/water-pump.html">ماتور مياه</a></li>
+                    <li><a href="../products-types/submersible-pump.html">ترومبة غطس</a></li>
+                    <li><a href="../products-types/welding-machine.html">ماكينة لحام</a></li>
+                    <li><a href="../products-types/glue-gun.html">مسدس شمع</a></li>
+                    <li><a href="../products-types/extention-cord.html">مشترك كهرباء</a></li>
+                </ul>
+            </div>
+    
+            <div class="products-list">
+                <a class="product">
+                    <img src="../images/صنفرة هزاز 320 وات.png" alt="">
+                    <p class="title">صنفرة هزاز 320 وات</p>
+                    <p class="badge">EMTOP</p>
+                    <p class="price">LE 1,400 EGP </p>
+                </a>
+            </div>
+        </div>    
+    </div>        
+
+    
+
+
+</body>
+</html>

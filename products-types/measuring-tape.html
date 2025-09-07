@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineerring Tools</title>
+    <link rel="stylesheet" href="../css/engineering.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function () {
+        const activeLink = document.querySelector('.products-types ul li a.active');
+        if (activeLink) {
+        const productsTypes = document.querySelector('.products-types');
+        const offsetTop = activeLink.offsetTop - productsTypes.offsetTop;
+        productsTypes.scrollTop = offsetTop;
+        }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../pages/contact.html" >اتصل بنا</a></li>
+                    <li><a href="../pages/accessories.html">ملحقات ادوات كهربائية</a></li>
+                    <li><a href="../pages/hand-tools.html"  class="active">ادوات يدوية</a></li>
+                    <li><a href="../pages/electrical-tools.html">ادوات كهربائية</a></li>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li><a href="../index.html" class="active">الرئيسية</a></li>
+                    <li><a href="../pages/electrical-tools.html">ادوات كهربائية</a></li>
+                    <li><a href="../pages/hand-tools.html">ادوات يدوية</a></li>
+                    <li><a href="../pages/accessories.html">ملحقات ادوات كهربائية</a></li>
+                    <li><a href="../pages/contact.html" >اتصل بنا</a></li>
+                </ul>
+
+        </div>
+    </header>
+    <div class="products">
+        <div class="container">
+            <details class="products-types-mobile">
+            <summary>ادوات يدوية</summary>
+            <ul>
+                <li><a href="../products-types/screwdrivers.html">مفكات</a></li>
+                    <li><a href="../products-types/pliers.html">بنوز</a><li>
+                    <li><a href="../products-types/pipe-wrench.html">مفتاح استنسن (انجليزي)</a></li>
+                    <li><a href="../products-types/adjustable-wrench.html">مفتاح فرنساوي</a></li>
+                    <li><a href="../products-types/ratchet-wrench.html">مفتاح حل وربط</a></li>
+                    <li><a href="../products-types/hex-key.html">مفتاح الن</a></li>
+                    <li><a href="../products-types/rivet-hand.html">يد برشام</a></li>
+                    <li><a href="../products-types/welding-electrode-holder.html">بنز لحام</a></li>
+                    <li><a href="../products-types/air-drill.html">دريل هواء</a></li>
+                    <li><a href="../products-types/air-spray-gun.html">مسدس دوكو</a></li>
+                    <li><a href="../products-types/air-blow-gun.html">مسدس هواء</a></li>
+                    <li><a href="../products-types/glue-gun-2.html">مسدس شمع</a></li>
+                    <li><a href="../products-types/hammer.html">شاكوش</a></li>
+                    <li><a href="../products-types/stoning-hammer.html">مطرقة</a></li>
+                    <li><a href="../products-types/cutters.html">مقصات</a></li>
+                    <li><a href="../products-types/hand-chisel.html">اجنة يدوي</a></li>
+                    <li><a href="../products-types/clamp.html">قمطة</a></li>
+                    <li><a href="../products-types/measuring-tape.html" class="active">شريط قياس</a></li>
+                    <li><a href="../products-types/angle-square.html">زاوية علام</a></li>
+                    <li><a href="../products-types/spirit-level-ruler.html">ميزان مياه</a></li>
+                    <li><a href="../products-types/stapler.html">دباسة</a></li>
+                    <li><a href="../products-types/brushes.html">فرش</a></li>
+                    <li><a href="../products-types/sockets.html">لقم</a></li>
+                    <li><a href="../products-types/chalk-line-reel.html">شكلاين</a></li>
+                    <li><a href="../products-types/hachsaw-frame.html">برواز منشار</a></li>
+                    <li><a href="../products-types/magnetic-welding-holder.html">حامل لحام مغناطيسي</a></li>
+                    <li><a href="../products-types/puller.html">زرجينة</a></li>
+                    <li><a href="../products-types/tile-cutter.html">ماكينة تقطيع سيراميك</a></li>
+                    <li><a href="../products-types/tools-box.html">شنطة عدة</a></li>
+                    <li><a href="../products-types/chain-block.html">بلانكو</a></li>
+                    <li><a href="../products-types/hydraulic-floor-jack.html">كوريك</a></li>
+                    <li><a href="../products-types/tools-set.html">طقم ادوات</a></li>
+            </ul>
+        </details>
+            <div class="products-types">
+                <h2>ادوات يدوية</h2>
+                <ul>
+                    <li><a href="../products-types/screwdrivers.html" >مفكات</a></li>
+                    <li><a href="../products-types/pliers.html">بنوز</a><li>
+                    <li><a href="../products-types/pipe-wrench.html">مفتاح استنسن (انجليزي)</a></li>
+                    <li><a href="../products-types/adjustable-wrench.html">مفتاح فرنساوي</a></li>
+                    <li><a href="../products-types/ratchet-wrench.html">مفتاح حل وربط</a></li>
+                    <li><a href="../products-types/hex-key.html">مفتاح الن</a></li>
+                    <li><a href="../products-types/rivet-hand.html">يد برشام</a></li>
+                    <li><a href="../products-types/welding-electrode-holder.html">بنز لحام</a></li>
+                    <li><a href="../products-types/air-drill.html">دريل هواء</a></li>
+                    <li><a href="../products-types/air-spray-gun.html">مسدس دوكو</a></li>
+                    <li><a href="../products-types/air-blow-gun.html">مسدس هواء</a></li>
+                    <li><a href="../products-types/glue-gun-2.html">مسدس شمع</a></li>
+                    <li><a href="../products-types/hammer.html">شاكوش</a></li>
+                    <li><a href="../products-types/stoning-hammer.html">مطرقة</a></li>
+                    <li><a href="../products-types/cutters.html">مقصات</a></li>
+                    <li><a href="../products-types/hand-chisel.html">اجنة يدوي</a></li>
+                    <li><a href="../products-types/clamp.html">قمطة</a></li>
+                    <li><a href="../products-types/measuring-tape.html" class="active">شريط قياس</a></li>
+                    <li><a href="../products-types/angle-square.html">زاوية علام</a></li>
+                    <li><a href="../products-types/spirit-level-ruler.html">ميزان مياه</a></li>
+                    <li><a href="../products-types/stapler.html">دباسة</a></li>
+                    <li><a href="../products-types/brushes.html">فرش</a></li>
+                    <li><a href="../products-types/sockets.html">لقم</a></li>
+                    <li><a href="../products-types/chalk-line-reel.html">شكلاين</a></li>
+                    <li><a href="../products-types/hachsaw-frame.html">برواز منشار</a></li>
+                    <li><a href="../products-types/magnetic-welding-holder.html">حامل لحام مغناطيسي</a></li>
+                    <li><a href="../products-types/puller.html">زرجينة</a></li>
+                    <li><a href="../products-types/tile-cutter.html">ماكينة تقطيع سيراميك</a></li>
+                    <li><a href="../products-types/tools-box.html">شنطة عدة</a></li>
+                    <li><a href="../products-types/chain-block.html">بلانكو</a></li>
+                    <li><a href="../products-types/hydraulic-floor-jack.html">كوريك</a></li>
+                    <li><a href="../products-types/tools-set.html">طقم ادوات</a></li>
+
+                    
+                </ul>
+            </div>
+    
+            <div class="products-list">
+                <a href="" class="product">
+                    <img src="../images/شريط قياس 5 متر.PNG" alt="">
+                    <p class="title">شريط قياس 5 متر</p>
+                    <p class="badge">EMTOP</p>
+                    <p class="price">LE 90 EGP </p>
+                </a>
+                <a href="" class="product">
+                    <img src="../images/شريط قياس 50 متر.PNG" alt="">
+                    <p class="title">شريط قياس 50 متر</p>
+                    <p class="badge">EMTOP</p>
+                    <p class="price">LE 400 EGP </p>
+                </a>
+            </div>
+        </div>    
+    </div>        
+
+    
+
+
+</body>
+</html>

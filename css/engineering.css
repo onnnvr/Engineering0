@@ -1,0 +1,512 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: changa, sans-serif;
+  padding-top: 97px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+    
+}
+
+@media (max-width: 767px){
+
+    .special-heading {
+        font-size: 60px;
+    }
+    .special-heading + p {
+        margin : -20px 0 0;
+        
+    }
+}
+ 
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  min-height: 97px;
+}
+
+header .container::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #a2a2a2;
+  bottom: 0;
+  width: calc(100% - 30px);
+  left: 15px;
+}
+
+header .logo {
+  width: 100px;
+}
+
+header img {
+  width: 100%;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  
+  
+}
+
+.toggle-menu {
+  font-size: 22px;
+  
+}
+
+@media (min-width: 1000px) {
+  .toggle-menu {
+    display: none !important;
+  }
+}
+
+header nav ul li a {
+  display: block;
+  padding: 35.3px 15px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  ;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: darkred;
+  border-bottom: 1px solid darkred;
+  opacity: 0.8;
+  
+}
+
+header .links {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+  header nav ul {
+    display: none;
+  }
+
+  header .links {
+    display: block ; 
+  }
+
+  header .links {
+    position: relative;
+    
+}
+header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+
+}
+
+header .links .icon span:first-child {
+    height: 3px;
+    width: 100%;
+}
+header .links .icon span:nth-child(2) {
+    height: 3px;
+    width: 60%;
+    transition: 0.3s;
+
+}
+header .links .icon span:nth-child(3) {
+    height: 3px;
+    width: 100%;
+
+}
+
+header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1000;
+    
+}
+header .links:hover ul {
+    display: block;
+}
+
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    ;
+}
+
+header .links ul li a {
+    display: block;
+    padding : 15px;
+    text-decoration: none;
+    color : #333;
+    transition: 0.3s;
+
+}
+
+header .links ul li a:hover {
+    padding-left: 25px;
+
+}
+
+header .links ul li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+
+}
+
+}
+
+.products .container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+
+}
+
+.products-types {
+    position: sticky;
+    top: 97px;
+    padding-top: 10px;
+    text-align: right;
+    direction: rtl;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 300px;
+    max-height: calc(100vh - 97px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+.products h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    width: 275px;
+}
+
+.products ul li a {
+    display: inline-block;
+    padding: 15px 15px 10px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 275px;
+    color: black;
+    border-bottom: #e9e2e2 1px solid;
+    transition: 0.3s;
+}
+
+.products ul li a:hover,
+.products ul li a.active {
+    background-color: darkred;
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* أعمدة ديناميكية */
+  gap: 20px; /* مسافة بين العناصر */
+  padding: 20px; /* مسافة داخلية */
+  list-style: none; /* إزالة النقاط */
+  direction: rtl;
+}
+
+/* تنسيق العناصر داخل القائمة */
+.products-list .product {
+  background-color: #f9f9f9; /* لون خلفية خفيف */
+  border: 1px solid #ddd; /* إطار خفيف */
+  border-radius: 8px; /* زوايا دائرية */
+  padding: 15px; /* مسافة داخلية */
+  text-align: center; /* توسيط النص */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التمرير */
+}
+
+.products-list .product:hover {
+  transform: translateY(-5px); /* رفع العنصر عند التمرير */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+/* النصوص داخل المنتجات */
+.products-list .product .title {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.products-list .product .badge {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  
+}
+
+.products-list .product .price {
+  font-size: 20px;
+  color: darkred;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* زر داخل المنتج */
+.products-list .product a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkred;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.products-list .product a:hover {
+  background-color: #a30000;
+}
+
+.products-list .product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+
+}
+ 
+.products-list{
+  width: 100%;
+}
+
+
+.landing {
+    background-image: url("../images/landing.png");
+    background-size: cover;
+    min-height: calc(100vh - 97px);
+    position: relative;
+
+}
+
+.landing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* لون التعتيم */
+    z-index: 2; /* تأكد من أن التعتيم فوق الصورة */
+}
+
+.landing .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 3; /* تأكد من أن النص فوق التعتيم */
+    width: 80%;
+}
+
+.landing .text .content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.landing .text .content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: white
+}
+
+.products-types-mobile {
+    display: none; /* إخفاء القائمة على الديسكتوب */
+}
+
+/* ...existing code... */
+
+/* إخفاء قائمة الديسكتوب على الموبايل */
+@media (max-width: 999px) {
+    .products-types {
+        display: none;
+    }
+}
+
+/* تنسيق القائمة القابلة للطي (الأكورديون) على الموبايل */
+/* ...existing code... */
+
+/* تنسيق القائمة والمنتجات على الموبايل */
+@media (max-width: 999px) {
+    .products .container {
+        flex-direction: column; /* جعل العناصر تظهر عموديًا */
+    }
+
+    .products-types {
+        display: none; /* إخفاء قائمة الديسكتوب */
+    }
+
+    .products-types-mobile {
+        display: block;
+        width: 100%; /* جعل القائمة تملأ عرض الشاشة */
+        margin-bottom: 10px; /* إضافة مسافة بين القائمة والمنتجات */ /* إضافة إطار */ /* إضافة زوايا دائرية */
+        overflow: hidden; /* منع تجاوز العناصر للإطار */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        border-bottom-left-radius: 10px ;
+        border-bottom-right-radius: 10px ;
+        
+      }
+
+    .products-types-mobile summary {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .products-types-mobile summary:hover {
+        background-color: black; /* تغيير لون الخلفية عند التحويم */
+    }
+
+    .products-types-mobile[open] summary::after {
+        transform: translateY(-50%) rotate(180deg); /* تدوير السهم عند الفتح */
+    }
+
+    .products-types-mobile ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: none; /* إخفاء القائمة افتراضيًا */
+        overflow: hidden; /* إخفاء المحتوى الزائد */
+        transition: max-height 0.3s ease-out; /* إضافة انتقال سلس */
+        background-color: white; /* إضافة خلفية بيضاء */
+    }
+
+    .products-types-mobile[open] ul {
+         display: block; /* إظهار القائمة عند فتحها */ 
+    }
+
+
+    .products-types-mobile ul li a {
+        display: block;
+        text-align:center ;
+        text-decoration: none;
+        padding: 15px 15px 10px 5px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        color: black;
+        border-bottom: #e9e2e2 1px solid;
+        transition: 0.3s;
+    }
+
+    .products-types-mobile ul li a:hover,
+    .products-types-mobile ul li a.active {
+        background-color: darkred;
+        color: white;
+        opacity: 0.8;
+
+    }
+
+    /* تنسيق المنتجات على الموبايل */
+    .products-list {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* عرض المنتجات في عمودين */
+        gap: 10px; /* إضافة مسافة بين المنتجات */
+    }
+}
+
+/* ...existing code... */
