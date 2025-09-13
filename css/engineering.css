@@ -441,6 +441,9 @@ header .links ul li:not(:last-child) {
         margin-top: 0 !important;
         border-bottom-left-radius: 10px ;
         border-bottom-right-radius: 10px ;
+        position: sticky;
+        top: 97px;
+        z-index: 10;
         
       }
 
@@ -509,4 +512,72 @@ header .links ul li:not(:last-child) {
     }
 }
 
-/* ...existing code... */
+.special-heading {
+    color : black;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    opacity: 0.8;
+    letter-spacing: 5px;
+}
+
+.contact .container {
+    text-align: center;
+    background-color: #f6f6f6;
+    font-size: 20px;
+    padding: 40px 0;
+    
+    width: 100%;
+}
+
+.contact .info {
+    padding: 50px 0px;
+}
+
+.contact i {
+  color: #a30000;
+  font-size: 30px;
+}
+
+
+.contact a {
+    text-decoration: none;
+    padding-left: 10px;
+    
+}
+
+
+.contact-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.contact-info .contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, auto));
+    gap: 20px;
+    direction: rtl;
+    place-items: center;
+}
+
+.contact-info .media {
+    padding: 20px;
+    text-align: center;
+    direction: ltr;
+
+}
+
+
+.contact-info .media h3 {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.contact-info .media p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 16px;
+    
+}
